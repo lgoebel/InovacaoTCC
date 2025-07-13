@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <!-- Definindo o conjunto de caracteres UTF-8 e a meta tag de visualização responsiva para dispositivos móveis -->
         <meta charset="UTF-8">
@@ -23,7 +23,7 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="application-name" content="Unity Plus">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="../image/favicon_io/mstile-150x150.png">
+        <meta name="msapplication-TileImage" content="image/favicon_io/mstile-150x150.png">
         <meta name="apple-mobile-web-app-title" content="Unity Plus">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,10 +32,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
         <!-- Ícones do site -->
-        <link rel="apple-touch-icon" sizes="180x180" href="../image/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="../image/favicon_io/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="image/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="image/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="image/favicon_io/site.webmanifest">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,38 +53,34 @@
     </head>
     <body class="d-flex flex-column">
         <header>
-            <nav class="navbar navbar-expand-lg mx-lg-5 px-lg-5 mx-4 mb-5 pb-5 mb-lg-0 pb-lg-0">
-                <div class="container-fluid my-3">
-                    <!-- Logo do sistema -->
+            <nav class="navbar navbar-expand-lg py-3">
+                <div class="container">
                     <a href="index.html" class="navbar-brand">
-                        <img src="image/unity_logo.png" alt="" srcset="" style="max-width: 20%;">
+                        <img src="image/unity_logo.png" alt="Unity+ Logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navigation" aria-controls="menu-navigation" aria-expanded="false" aria-label="Toggle Navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
                     <div class="collapse navbar-collapse" id="menu-navigation">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex gap-lg-4" style="font-size: 1.1rem;">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link active" aria-current="page"><i class="bi bi-house-door-fill h4"></i></a>
+                                <a href="index.html" class="nav-link active">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./php/relato.php" class="nav-link">Relato</a>
+                                <a href="php/relato.php" class="nav-link">Relato</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link disabled">Fórum</a>
+                                <a href="#" class="nav-link">Fórum</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link disabled">Sobre</a>
+                                <a href="#" class="nav-link">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link disabled">Contato</a>
+                                <a href="php/contato.php" class="nav-link">Contato</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="./php/login.php" class="nav-link d-flex gap-2">
-                                    <i class="bi bi-person-circle h4"></i>
-                                    <span>Entrar</span>
-                                </a>
+                            <li class="nav-item ms-lg-3">
+                                <a href="php/login.php" class="btn btn-unity">Entrar</a>
                             </li>
                         </ul>
                     </div>
@@ -93,399 +89,287 @@
         </header>
 
         <main class="flex-grow-1">
-            <!-- Parte de apresentação do site, com informações sobre o projeto e seus objetivos. -->
-            <article class="container my-5 pb-5 d-flex align-items-center">
-                <section class="container my-5 row align-items-center pb-5">
-                    <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 mx-auto">
-                        <h1 style="font-weight: bold; font-size: 75px;">Unity Plus</h1>
-                        <h6>A Plataforma de Diagnóstico Socioeconômico Comunitário que integra você e sua comunidade com a Petrobras.</h6>
-                        <br><br>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <i class="bi bi-union icon-apres text-white"></i>
-                                <span><strong>Relatos</strong></span>
-                            </div>
-                            <div class="col-3">
-                                <i class="bi bi-union icon-apres text-white"></i>
-                                <span><strong>Fórum</strong></span>
-                            </div>
-                            <div class="col-3">
-                                <i class="bi bi-union icon-apres text-white"></i>
-                                <span><strong>Contato</strong></span>
-                            </div>
-                        </div>
-
-                        <br><br>
-
-                        <button class="btn btn-dark mb-4">Cadastre-se</button>
-                    </div>
-            
-                    <img src="image/header.png" alt="Desenho de duas pessoas interagindo com telas digitais." class="col-lg-6 col-md-12 mb-4 mb-lg-0 mx-auto img-fluid">
-                </section>
-            </article>
-            
-            <article class="container-fluid bg-azul mb-5 mt-4">
-                <section class="container my-5 py-5">
+            <section class="top-section fade-up bg-body-tertiary">
+                <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                            <img src="image/apresentacao2.png" alt="Desenho de uma pessoa escrevendo um relatório" class="img-fluid">
-                        </div>
-                        
-                        <div class="col-lg-5 col-md-12 mx-auto">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            <p class="mb-0">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                <br><br>
-                                Facilis, assumenda pariatur aperiam repellat maxime error tenetur enim odio! 
-                                Nesciunt architecto, ea quis perferendis accusamus eum!
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="container my-5 py-5 d-flex flex-column">
-                <section class="container my-5 py-5">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias, 
-                        <br>
-                        inventore esse odio porro officiis maxime velit 
-                        <br>
-                        numquam excepturi cupiditate a minus corrupti, doloribus ab.
-                    </p>
-                </section>
-
-                <section>
-                    <div class="row align-items-center mx-auto">
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: none;">
-                                <img src="image/apresentacao3.png" class="card-img mb-4" alt="Desenho de pessoa usando notebook." style="width: 15rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3"><b>Lorem, ipsum dolor.</b></h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?
-                                    </p>
-                                </div>
-                            </div>                                                        
-                        </div>
-
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: none;">
-                                <img src="image/apresentacao4.png" class="card-img mb-4" alt="Desenho de pessoa trabalhando com a terra." style="border: solid 2px; width: 15rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3"><b>Lorem, ipsum dolor.</b></h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?
-                                    </p>
-                                </div>
-                            </div>                                                        
-                        </div>
-
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: none;">
-                                <img src="image/apresentacao5.png" class="card-img mb-4" alt="Desenho de pessoa usando notebook com relatório." style="border: solid 2px; width: 15.8rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3"><b>Lorem, ipsum dolor.</b></h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?
-                                    </p>
-                                </div>
-                            </div>                                                        
-                        </div>
-
-                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: none;">
-                                <img src="image/apresentacao5.png" class="card-img mb-4" alt="Desenho de pessoa usando notebook com relatório." style="border: solid 2px; width: 15.8rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3"><b>Lorem, ipsum dolor.</b></h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?
-                                    </p>
-                                </div>
-                            </div>                                                        
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="container-fluid bg-laranja my-5 py-4 text-white">
-                <section class="container my-5 py-4">
-                    <div class="row align-items-center">                        
-                        <div class="col-lg-5 col-md-12 mx-auto">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            <p class="mb-0">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                <br><br>
-                                Facilis, assumenda pariatur aperiam repellat maxime error tenetur enim odio! 
-                                Nesciunt architecto, ea quis perferendis accusamus eum!
-                            </p>
-
-                            <br><br>
-                            
-                            <div class="row">
-                                <div class="col-3">
-                                    <i class="bi bi-union icon-apres text-white"></i>
-                                    <span>Lorem</span>
-                                </div>
-                                <div class="col-3">
-                                    <i class="bi bi-union icon-apres text-white"></i>
-                                    <span>Lorem</span>
-                                </div>
-                                <div class="col-3">
-                                    <i class="bi bi-union icon-apres text-white"></i>
-                                    <span>Lorem</span>
-                                </div>
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <h1 class="top-title">Plataforma de Diagnóstico <span class="text-unity3">Socioeconômico Comunitário</span></h1>
+                            <p class="top-subtitle">Conectando comunidades e empresas para um desenvolvimento sustentável e transparente</p>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-unity px-4 py-3">Cadastre-se</a>
+                                <a href="#" class="btn btn-outline-dark px-4 py-3">Saiba mais</a>
                             </div>
                         </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                            alt="Comunidade unida" 
+                            class="img-fluid top-img">
+                        </div>
 
-                        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                            <img src="image/apresentacao6.png" alt="Desenho de uma pessoa falando com um megafone" class="img-fluid">
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="container-fluid my-5 py-4 d-flex flex-column">
-                <section class="container my-5 py-5">
-                    <h2 class="mb-4">Lorem ipsum dolor sit amet.</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias, 
-                        <br>
-                        inventore esse odio porro officiis maxime velit 
-                        <br>
-                        numquam excepturi cupiditate a minus corrupti, doloribus ab.
-                    </p>
-                </section>
-
-                <section class="container mb-5  py-5">
-                    <div class="row text-center">
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <i class="bi bi-cone-striped" style="font-size: 3rem;"></i>
-                            <p class="mt-2">Lorem</p>
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article class="container-fluid my-5 py-5 d-flex flex-column">
-                <section class="container my-5 py-5">
-                    <h2 class="mb-4">Lorem ipsum dolor sit amet.</h2>
-                </section>
-
-                <section class="container my-5  py-5">
-                    <div class="row align-items-center mx-auto">
-                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: solid 2px; height: 25rem; border-radius: 20px;">
-                                <div class="card-header">
-                                    <span class="h4" style="font-weight: bold;">. . .</span>
-                                </div>                               
-                                <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                                    <p class="card-text text-center">
-                                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?
-                                    </p>
+                        <div class="pt-5 col-lg-12">
+                            <div class="d-flex justify-content-between">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-clipboard-data"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <strong>Diagnóstico preciso</strong>
+                                        <p class="mb-0">Registro e análise de dados comunitários</p>
+                                    </div>
                                 </div>
-                                <div class="card-footer text-end">
-                                    <span style="font-weight: bold;">Lorem, ipsum dolor.</span>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <strong>Colaboração</strong>
+                                        <p class="mb-0">Conexão entre comunidades, empresas e governo</p>
+                                    </div>
                                 </div>
-                            </div>                                                        
-                        </div>
-
-                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: solid 2px; height: 25rem; border-radius: 20px;">
-                                <div class="card-header">
-                                    <span class="h4" style="font-weight: bold;">. . .</span>
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                                    <p class="card-text text-center">
-                                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?"
-                                    </p>
-                                </div>
-                                <div class="card-footer text-end">
-                                    <span style="font-weight: bold;">Lorem, ipsum dolor.</span>
-                                </div>
-                            </div>                                                        
-                        </div>
-
-                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                            <div class="card mx-auto" style="width: 18rem; border: solid 2px; height: 25rem; border-radius: 20px;">
-                                <div class="card-header">
-                                    <span class="h4" style="font-weight: bold;">. . .</span>
-                                </div>                                
-                                <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                                    <p class="card-text text-center">
-                                        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Ratione nostrum laborum voluptatem aspernatur voluptate amet?
-                                    </p>
-                                </div>
-                                <div class="card-footer text-end">
-                                    <span style="font-weight: bold;">Lorem, ipsum dolor.</span>
-                                </div>
-                            </div>                                                        
-                        </div>
-                    </div>
-                </section>
-            </article>
-
-            <article  class="container-fluid my-5 py-4 d-flex flex-column align-items-center justify-content-center">
-                <section class="text-center">
-                    <h1 class="text-center mb-5">
-                        Lorem ipsum dolor, sit amet consectetur <br>
-                        adipisicing elit. Laborum, in.
-                    </h1>
-                    <button class="btn btn-dark mb-4">
-                        Lorem
-                    </button>
-                </section>
-
-                <section>
-                    <img src="image/footer.png" alt="" class="img-fluid img-footer my-4" style="width: 40rem;">
-                </section>
-            </article>
-
-            <aside class="container-fluid bg-prefooter text-white py-5 mt-5">
-                <div class="container py-5">
-                    <div class="row">
-                        <!-- Logo e descrição -->
-                        <div class="col-md-3 mb-4">
-                            <h4 class="fw-bold">
-                                Unity+
-                            </h4>
-                            <p>Plataforma de Diagnóstico Socioeconômico Comunitário</p>
-                            <p class="small">Uma solução Integra para transformação social</p>
-                        </div>
-
-                        <!-- Contato -->
-                        <div class="col-md-3 mb-4">
-                            <h5 class="fw-bold">Contato</h5>
-                            <p><i class="bi bi-geo-alt me-2"></i> Av. das Comunidades, 1234 - Centro</p>
-                            <p><i class="bi bi-telephone me-2"></i> (00) 4002-8922</p>
-                            <p><i class="bi bi-envelope me-2"></i> suporte@unityplus.platform</p>
-                            <p><i class="bi bi-clock me-2"></i> Seg-Sex: 8h-18h</p>
-                        </div>
-
-                        <!-- Links rápidos -->
-                        <div class="col-md-3 mb-4">
-                            <h5 class="fw-bold">Acesso Rápido</h5>
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="relato.html" class="text-white text-decoration-none">
-                                        <i class="bi bi-megaphone me-2"></i> Fazer um relato
-                                    </a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="forum.html" class="text-white text-decoration-none">
-                                        <i class="bi bi-people me-2"></i> Fórum comunitário
-                                    </a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="feedback.html" class="text-white text-decoration-none">
-                                        <i class="bi bi-chat-left-text me-2"></i> Feedbacks
-                                    </a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="duvidas.html" class="text-white text-decoration-none">
-                                        <i class="bi bi-question-circle me-2"></i> Perguntas frequentes
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Newsletter e redes sociais -->
-                        <div class="col-md-3">
-                            <h5 class="fw-bold">Fique Conectado</h5>
-                            <p class="small">Receba atualizações sobre projetos comunitários</p>
-                            
-                            <form class="d-flex mb-3">
-                                <input type="email" class="form-control me-2" placeholder="Seu melhor email" required>
-                                <button type="submit" class="btn btn-light">
-                                    <i class="bi bi-send h5"></i>
-                                </button>
-                            </form>
-                            
-                            <div class="mt-4">
-                                <h6 class="fw-bold mb-3">Siga-nos</h6>
-                                <div class="d-flex gap-3">
-                                    <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-                                    <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
-                                    <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-shield-lock"></i>
+                                    </div>
+                                    <div class="feature-text">
+                                        <strong>Segurança</strong>
+                                        <p class="mb-0">Proteção de dados em conformidade com a LGPD</p>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <div class="mt-4 pt-2 border-top">
-                                <p class="small mb-0">
-                                    <i class="bi bi-shield-lock me-1"></i> Dados protegidos pela LGPD
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Rodapé inferior -->
-                    <div class="row mt-5 pt-4 border-top">
-                        <div class="col-md-6">
-                            <p class="small mb-0">
-                                &copy; 2025 Integra Tecnologia. Todos os direitos reservados.<br>
-                                CNPJ: 00.000.000/0001-00
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-md-end">
-                            <p class="small mb-0">
-                                Desenvolvido com <i class="bi bi-heart-fill text-danger h5"></i> para comunidades<br>
-                                <a href="politica.html" class="text-white text-decoration-none me-3">Política de Privacidade</a>
-                                <a href="termos.html" class="text-white text-decoration-none">Termos de Uso</a>
-                            </p>
                         </div>
                     </div>
                 </div>
-            </aside>
+            </section>
+
+            <!-- Sobre a Plataforma -->
+            <section class="py-5 my-5 fade-up">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Análise de dados" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="mb-4 fw-bold section-title">Sobre o <span class="text-unity3">Unity+</span></h2>
+                            <p class="lead">O Unity+ é uma plataforma inovadora que permite o registro e consulta de dados socioeconômicos em tempo real, promovendo uma cooperação transparente entre comunidades locais e empresas.</p>
+                            <p>Desenvolvida com foco em acessibilidade e usabilidade, nossa plataforma permite que comunidades registrem informações sobre sua realidade, enquanto empresas como a Petrobras podem acessar esses dados para direcionar projetos e investimentos de forma mais eficaz.</p>
+                            <div class="mt-5">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-check2-circle text-unity3 fs-3 me-3"></i>
+                                            <div>
+                                                <h5>Transparência</h5>
+                                                <p class="mb-0">Dados abertos e acessíveis para todos os envolvidos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-graph-up text-unity3 fs-3 me-3"></i>
+                                            <div>
+                                                <h5>Desenvolvimento</h5>
+                                                <p class="mb-0">Base para políticas públicas e investimentos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Funcionalidades -->
+            <section class="py-5 bg-light fade-up">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 me-auto">
+                            <h2 class="mb-3 section-title fw-bold">Funcionalidades <span class="text-unity3">Principais</span></h2>
+                            <p class="lead">Descubra como o Unity+ pode transformar a relação entre comunidades e empresas</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-feature">
+                                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Formulários">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formulários de Coleta</h5>
+                                    <p class="card-text">Registro de dados socioeconômicos através de formulários intuitivos e com suporte a múltiplos formatos de dados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-feature">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Gráficos">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dashboard de Gráficos</h5>
+                                    <p class="card-text">Visualização interativa de dados através de gráficos e mapas de calor para análise estratégica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card card-feature">
+                                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Fórum">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fórum Comunitário</h5>
+                                    <p class="card-text">Espaço para discussão e colaboração entre membros da comunidade e representantes empresariais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefícios -->
+            <section class="py-5 bg-unity3 text-white fade-up">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <h2 class="mb-4 fw-bold">Benefícios para a <span class="text-warning">Comunidade</span></h2>
+                            <p class="mb-4">O Unity+ oferece uma plataforma onde sua voz pode ser ouvida e suas necessidades registradas, contribuindo para o desenvolvimento local.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i> Visibilidade para suas necessidades e prioridades</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i> Acesso a informações socioeconômicas atualizadas</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i> Canal direto com empresas e poder público</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i> Participação ativa no desenvolvimento local</li>
+                            </ul>
+                            <a href="#" class="btn btn-light mt-3">Como participar</a>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Comunidade" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Depoimentos -->
+            <section class="py-5 fade-up">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="mb-3 fw-bold">O Que Dizem <span class="text-unity3">Nossos Usuários</span></h2>
+                            <p class="lead">Comunidades e empresas compartilham suas experiências</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Silva" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h5 class="mb-0">Maria Silva</h5>
+                                        <p class="mb-0 text-muted">Líder Comunitária</p>
+                                    </div>
+                                </div>
+                                <p>"O Unity+ nos deu voz e visibilidade. Pela primeira vez, nossas necessidades são registradas e consideradas no planejamento de projetos da Petrobras em nossa região."</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Carlos Mendes" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h5 class="mb-0">Carlos Mendes</h5>
+                                        <p class="mb-0 text-muted">Consultor Petrobras</p>
+                                    </div>
+                                </div>
+                                <p>"A plataforma revolucionou nossa forma de interagir com as comunidades. Os dados socioeconômicos coletados nos ajudam a direcionar investimentos de forma mais eficiente."</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Costa" class="rounded-circle me-3" width="60" height="60">
+                                    <div>
+                                        <h5 class="mb-0">Ana Costa</h5>
+                                        <p class="mb-0 text-muted">Agente de Campo</p>
+                                    </div>
+                                </div>
+                                <p>"O aplicativo offline é fundamental para nosso trabalho em áreas remotas. Podemos registrar informações mesmo sem conexão e sincronizar quando voltamos à cidade."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="py-5 bg-unity1 fade-up">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 text-center text-lg-start mb-5 mb-lg-0">
+                            <h2 class="text-white mb-3">Faça parte dessa transformação</h2>
+                            <p class="lead text-white mb-0">Sua comunidade também pode se beneficiar do Unity+</p>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <a href="#" class="btn btn-light btn-lg px-5 py-3 fw-bold">Cadastre-se Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer class="container-fluid text-white bg-footer py-2">
-                <div class="text-center">
-                    <span>© 2025 Integra</span>
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <h3 class="footer-title">UNITY+</h3>
+                        <p>Plataforma de Diagnóstico Socioeconômico Comunitário que conecta comunidades e empresas para um desenvolvimento sustentável.</p>
+                        <div class="social-links mt-4">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h4 class="footer-title">Links Rápidos</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="index.html">Início</a></li>
+                            <li class="mb-2"><a href="relato.html">Relato</a></li>
+                            <li class="mb-2"><a href="forum.html">Fórum</a></li>
+                            <li class="mb-2"><a href="sobre.html">Sobre</a></li>
+                            <li class="mb-2"><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4 class="footer-title">Recursos</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="faq.html">Perguntas Frequentes</a></li>
+                            <li class="mb-2"><a href="politica.html">Política de Privacidade</a></li>
+                            <li class="mb-2"><a href="termos.html">Termos de Uso</a></li>
+                            <li class="mb-2"><a href="tutoriais.html">Tutoriais</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4 class="footer-title">Contato</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. das Comunidades, 1234</li>
+                            <li class="mb-2"><i class="bi bi-telephone me-2"></i> (00) 4002-8922</li>
+                            <li class="mb-2"><i class="bi bi-envelope me-2"></i> contato@unityplus.com</li>
+                            <li class="mb-2"><i class="bi bi-clock me-2"></i> Seg-Sex: 8h-18h</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="copyright mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start">
+                            &copy; 2025 Unity+. Todos os direitos reservados.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            Desenvolvido por <a href="#" class="text-unity3 fw-bold">Integra Tecnologia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
-        <!--Boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
         crossorigin="anonymous"></script>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

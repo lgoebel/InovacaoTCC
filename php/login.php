@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+    <head>  
         <!-- Definindo o conjunto de caracteres UTF-8 e a meta tag de visualização responsiva para dispositivos móveis -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,110 +43,123 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         
         <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" 
+        crossorigin="anonymous">
         
         <!-- CSS -->
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <main class="row vh-100 g-0">
-            <article class="col-12 col-lg-6 position-relative d-none d-lg-block">
-                <a href="../index.html" class="bg-holder"><img src="../image/fundo_login.png" alt="Imagem de apresentação da plataforma"></a>
-            </article>
-            <article class="col-12 col-lg-6">
-                <div class="container h-100 g-0 px-4 px-sm-0 align-items-center d-flex">
-                        <div class="card shadow card-login mx-auto fade-up" style="max-width: 500px;">
-                            <div class="card-header bg-unity text-white py-3">
-                                <h4 class="mb-0 text-center">Entre na sua conta</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="text-center mb-4">
-                                    <p>Acesse pela sua conta no Gov.br</p>
-                                    <button class="btn btn-unity w-100 mb-3 fw-bold" data-bs-toggle="modal" data-bs-target="#govbrModal">
-                                        Gov.br
-                                    </button>
+        <main class="row g-0 flex-grow-1">
+            <!-- Painel esquerdo com imagem e texto -->
+            <section class="col-12 col-lg-6 position-relative d-none d-lg-flex login-panel">
+                <div class="px-5">
+                    <h1>Plataforma de Diagnóstico Socioeconômico Comunitário</h1>
+                    <p>Conectando comunidades e empresas para um desenvolvimento sustentável e transparente</p>
+                    <div class="d-flex gap-3">
+                        <a href="../index.html" class="btn bg-unity2 px-4 py-2 fw-bold">Voltar ao Início</a>
+                        <a href="#" class="btn btn-light px-4 py-2 fw-bold">Saiba mais</a>
+                        <a href="#" class="btn btn-outline-light px-4 py-2">Cadastre-se</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Painel direito com formulário de login -->
+            <section class="col-12 col-lg-6 d-flex align-items-center justify-content-center login-form">
+                <div class="card shadow card-login mx-auto fade-up" style="max-width: 500px; width: 100%;">
+                    <div class="card-header bg-unity2 py-3 text-center">
+                        <h4 class="mb-0">Entre na sua conta</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <p>Acesse pela sua conta no Gov.br</p>
+                            <button class="btn btn-unity w-100 mb-3 fw-bold" data-bs-toggle="modal" data-bs-target="#govbrModal">
+                                Gov.br
+                            </button>
 
-                                    <p>Acesse sua conta Unity+ usando e-mail ou redes sociais</p>
-                                </div>
-                                
-                                <!-- Login Social -->
-                                <div class="social-login mb-3">
-                                    <button class="btn btn-outline-danger w-100 mb-2 fw-bold">
-                                        <i class="bi bi-google h5"></i> Entrar com Google
-                                    </button>
-                                    <button class="btn btn-outline-primary w-100 mb-2 fw-bold">
-                                        <i class="bi bi-facebook h5"></i> Entrar com Facebook
-                                    </button>
-                                    <button class="btn btn-outline-dark w-100 fw-bold">
-                                        <i class="bi bi-apple h5"></i> Entrar com Apple
-                                    </button>
-                                </div>
-                                
-                                <!-- Divisor -->
-                                <div class="mb-3 text-center d-flex align-items-center">
-                                    <hr class="flex-grow-1">
-                                    <span class="mx-2 text-secondary">ou</span>
-                                    <hr class="flex-grow-1">
-                                </div>
-                                
-                                <!-- Form -->
-                                <form action="#" method="post">
-                                    <div class="input-group mb-2">
-                                        <span class="input-group-text">
-                                            <i class="bi bi-person"></i>
-                                        </span>
-                                        <input type="text" class="form-control form-control-lg fs-6" placeholder="Usuário ou e-mail" required>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text">
-                                            <i class="bi bi-key"></i>
-                                        </span>
-                                        <input type="password" class="form-control form-control-lg fs-6" placeholder="Senha" required>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input">
-                                            <label for="form-check" class="form-check-label text-dark small">Lembrar de mim</label>
-                                        </div>
-                                        <a href="#!" class="link-dark small">Esqueci minha senha</a>
-                                    </div>
-                                    <div class="d-grid">
-                                        <button class="btn btn-unity fw-bold" type="button">Entrar</button>
-                                    </div>
-                                </form>
-                                
-                                <div class="text-center mt-3">
-                                    <small>Não tem uma conta? <a href="paginaCadastro.html" class="fw-bold link-dark">Criar conta</a></small>
-                                </div>
+                            <p>Acesse sua conta Unity+ usando e-mail ou redes sociais</p>
+                        </div>
+                        
+                        <!-- Login Social -->
+                        <div class="social-login mb-3">
+                            <button class="btn btn-outline-danger w-100 mb-2 fw-bold">
+                                <i class="bi bi-google h5"></i> Entrar com Google
+                            </button>
+                            <button class="btn btn-outline-primary w-100 mb-2 fw-bold">
+                                <i class="bi bi-facebook h5"></i> Entrar com Facebook
+                            </button>
+                            <button class="btn btn-outline-dark w-100 fw-bold">
+                                <i class="bi bi-apple h5"></i> Entrar com Apple
+                            </button>
+                        </div>
+                        
+                        <!-- Divisor -->
+                        <div class="mb-3 text-center d-flex align-items-center">
+                            <hr class="flex-grow-1">
+                            <span class="mx-2 text-secondary">ou</span>
+                            <hr class="flex-grow-1">
+                        </div>
+                        
+                        <!-- Formulário de login -->
+                        <form action="#" method="post">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" class="form-control form-control-lg" placeholder="Usuário ou e-mail" required>
                             </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <i class="bi bi-key"></i>
+                                </span>
+                                <input type="password" class="form-control form-control-lg" placeholder="Senha" required>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label for="rememberMe" class="form-check-label small">Lembrar de mim</label>
+                                </div>
+                                <a href="#" class="link-dark small">Esqueci minha senha</a>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-unity fw-bold py-2" type="button">Entrar</button>
+                            </div>
+                        </form>
+                        
+                        <div class="text-center mt-3">
+                            <small>Não tem uma conta? <a href="paginaCadastro.html" class="fw-bold link-dark">Criar conta</a></small>
                         </div>
                     </div>
-            </article>
+                </div>
+            </section>
 
-            <!-- Modal -->
+            <!-- Modal Gov.br -->
             <div class="modal fade" id="govbrModal" tabindex="-1" aria-labelledby="govbrModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header bg-unity">
+                        <div class="modal-header bg-unity text-white">
                             <h5 class="modal-title" id="govbrModalLabel">Entrar com CPF</h5>
-                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Digite seu CPF para acessar sua conta gov.br</p>
+                            <p class="mb-3">Digite seu CPF para acessar sua conta gov.br</p>
                             <form action="#" method="post">
-                                <input type="tel" class="form-control mb-3" placeholder="Digite seu CPF" required>
-                                <button type="submit" class="btn btn-unity fw-bold">Acessar Gov.br</button>
-                                <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Digite seu CPF" required>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-unity fw-bold flex-grow-1">Acessar Gov.br</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        
 
-        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
         crossorigin="anonymous"></script>
