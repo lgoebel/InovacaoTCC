@@ -59,7 +59,7 @@
                     <h1>Plataforma de Diagnóstico Socioeconômico Comunitário</h1>
                     <p>Conectando comunidades e empresas para um desenvolvimento sustentável e transparente</p>
                     <div class="d-flex gap-3">
-                        <a href="../index.html" class="btn bg-unity2 px-4 py-2 fw-bold">Voltar ao Início</a>
+                        <a href="../index.html" class="btn btn-unity2 px-4 py-2 fw-bold">Voltar ao Início</a>
                         <a href="#" class="btn btn-light px-4 py-2 fw-bold">Saiba mais</a>
                         <a href="#" class="btn btn-outline-light px-4 py-2">Cadastre-se</a>
                     </div>
@@ -137,17 +137,25 @@
 
             <!-- Modal Gov.br -->
             <div class="modal fade" id="govbrModal" tabindex="-1" aria-labelledby="govbrModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header bg-unity text-white">
-                            <h5 class="modal-title" id="govbrModalLabel">Entrar com CPF</h5>
+                            <h5 class="modal-title" id="govbrModalLabel">Entrar com o Gov.br</h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
                         </div>
                         <div class="modal-body">
-                            <p class="mb-3">Digite seu CPF para acessar sua conta gov.br</p>
+                            <img src="https://sso.acesso.gov.br/assets/govbr/img/senha.png" alt="Logomarca GovBR" class="img-fluid mb-2" style="max-width: 100%;">
+                            <p class="mb-3">Digite seu CPF e senha para acessar sua conta gov.br</p>
                             <form action="#" method="post">
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control form-control-lg" placeholder="Digite seu CPF" required>
+                                    <div class="input-group mb-2">
+                                        <label for="cpf" class="input-group-text">CPF</label>
+                                        <input type="tel" id="cpf" class="form-control" placeholder="Digite seu CPF" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="pass" class="input-group-text">Senha</label>
+                                        <input type="password" id="pass" class="form-control" placeholder="Digite sua Senha" required>
+                                    </div>
                                 </div>
                                 <div class="d-flex gap-2">
                                     <button type="submit" class="btn btn-unity fw-bold flex-grow-1">Acessar Gov.br</button>
