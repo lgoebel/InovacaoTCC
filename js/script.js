@@ -15,18 +15,6 @@ document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
     });
 });
 
-// Simular animações de entrada
-document.addEventListener('DOMContentLoaded', function() {
-    const fadeElements = document.querySelectorAll('.fade-up');
-    
-    fadeElements.forEach((element, index) => {
-        setTimeout(() => {
-            element.style.opacity = "1";
-            element.style.transform = "translateY(0)";
-        }, 200 * index);
-    });
-});
-
 // Animação de seta para voltar ao topo da tela
 const arrowUp = document.querySelector('.arrow-up');
 const observer = new IntersectionObserver((entries) => {
@@ -41,6 +29,10 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.1
 });
 
+const alvo = document.querySelector('.top-section');
+observer.observe(alvo);
+
+// Função pra preview de entrada de dados em relatos de baixa prioridade.
 function modalBaixaPreview() {
     const cpf = document.getElementById('cpf-baixa').value;
     const comunity = document.getElementById('comun-baixa').value;
@@ -138,7 +130,7 @@ function modalBaixaPreview() {
             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                 <i class="bi bi-pencil me-2"></i>Corrigir Dados
             </button>
-            <button type="button" class="btn btn-success" id="btn-confirmar-envio" data-bs-dismiss="modal">
+            <button type="button" class="btn btn-success" id="btn-confirmar-envio" data-bs-dismiss="modal" onclick="mostrarAlerta()">
                 <i class="bi bi-send-check me-2"></i>Confirmar Envio
             </button>
         </div>
@@ -146,4 +138,15 @@ function modalBaixaPreview() {
 
     modalContent.innerHTML = content;
     modal.show();
+}
+
+function mostrarAlerta() {
+    const alerta = `
+        <div class="alert alert-success alert-dismissible fade show" role="alert" style="position: fixed; left: 2%; top: 2%; z-index: 10; ">
+            <p class="fw-bold">Seu formulário foi enviado com sucesso!</p>
+            <span>Acompanhe o andamento em seu perfil.</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+        </div>
+    `;
+    document.getElementById('alertPlaceholder').innerHTML = alerta;
 }
