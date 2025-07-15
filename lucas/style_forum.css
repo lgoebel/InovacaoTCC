@@ -1,0 +1,106 @@
+        :root {
+            --color-unity1: #08141d;
+            --color-unity2: #e76f24;
+            --color-unity3: #4b4278;
+            --color-unity4: #ae244b;
+            --color-unity5: #8eac30;
+            --color-light: #ffffff;
+            --color-dark: #000000;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .forum-header {
+            background: linear-gradient(135deg, var(--color-unity3), var(--color-unity1));
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: var(--color-unity3);
+        }
+
+        .nav-pills .nav-link {
+            color: var(--color-unity3);
+        }
+
+        .discussion-card {
+            border-left: 4px solid var(--color-unity3);
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+        }
+
+        .discussion-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .priority-tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .priority-high {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .priority-medium {
+            background-color: #fff8e1;
+            color: #f57f17;
+        }
+
+        .priority-low {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .vote-btn {
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .vote-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .vote-count {
+            font-weight: bold;
+            margin: 0 0.5rem;
+        }
+
+        .progress-thin {
+            height: 8px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .btn-unity {
+            background-color: var(--color-unity3);
+            color: white;
+        }
+
+        .btn-unity:hover {
+            background-color: var(--color-unity1);
+            color: white;
+        }
